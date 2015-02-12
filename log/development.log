@@ -1,0 +1,224 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:23:04 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 19ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:36:59 -0600
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :notes:index` to `controller: :notes:index`. (called from block in <top (required)> at /Users/tyler/Development/Sandbox/learn_marionette/config/routes.rb:2)
+
+ArgumentError ('notes:index' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (22.4ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (80.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:37:43 -0600
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :notes:index` to `controller: :notes:index`. (called from block in <top (required)> at /Users/tyler/Development/Sandbox/learn_marionette/config/routes.rb:2)
+
+ArgumentError ('notes:index' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (22.1ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (76.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:37:47 -0600
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/tyler/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tyler/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tyler/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.8ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/tyler/.rvm/gems/ruby-2.2.0@learn_marionette/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (62.6ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :notes:index` to `controller: :notes:index`. (called from block in <top (required)> at /Users/tyler/Development/Sandbox/learn_marionette/config/routes.rb:2)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateNotes (20150128222438)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "notes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150128222438"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NotesController#index as HTML
+  Rendered notes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 671ms (Views: 670.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/underscore/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/backbone/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:13 -0600
+
+
+Started GET "/assets/marionette/backbone.marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:14 -0600
+
+
+Started GET "/assets/marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:14 -0600
+
+
+Started GET "/assets/application-3f2de7b2cdad3a795423987bc84f38b9.js?body=1" for 127.0.0.1 at 2015-01-28 16:38:14 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+Processing by NotesController#index as HTML
+  Rendered notes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 319ms (Views: 317.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/underscore/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/backbone/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/marionette/backbone.marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/backbone/app-2f9bd32802efa72485192d741e710830.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/assets/application-3cb363ab6a6ed4ff9570368c57db3ce8.js?body=1" for 127.0.0.1 at 2015-01-28 16:39:27 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by NotesController#index as HTML
+  Rendered notes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 132ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/underscore/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/underscore-c6ac63ce082a4facaeb2591ab389d5ad.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/backbone/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/marionette/backbone.marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:12 -0600
+
+
+Started GET "/assets/marionette-4ff9c0af35778e5d75d925c2ec20a32f.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:13 -0600
+
+
+Started GET "/assets/backbone/app-2f9bd32802efa72485192d741e710830.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:13 -0600
+
+
+Started GET "/assets/application-3cb363ab6a6ed4ff9570368c57db3ce8.js?body=1" for 127.0.0.1 at 2015-02-12 13:59:13 -0600
